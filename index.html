@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Stairway To Heaven - Dev</title>
+    <style>
+        html, body { margin: 0; padding: 0; overflow: hidden; height: 100%; }
+        canvas { display: block; width: 100%; height: 100%; }
+    </style>
+<link rel="modulepreload" href="./stairway-to-heaven-26b439fc628ac87c.js" crossorigin=anonymous integrity="sha384-MsdM3cwBRHvT2bWxxnilickmJJSYg0Ue+E/1n5xpn3pem9Jsmn++fQAtOkVSupfZ"><link rel="preload" href="./stairway-to-heaven-26b439fc628ac87c_bg.wasm" crossorigin=anonymous integrity="sha384-mEDbcR8Bh1T9IREzv7Mq8RqNP5vbdu+q9O/1sPOjr+6W3QVVN/RsQE683OumpGck" as="fetch" type="application/wasm"></head>
+<body>
+
+<script type="module" nonce="V4gt27Md9Xr9FGrLTA0DyQ==">
+import init, * as bindings from '/stairway-to-heaven-26b439fc628ac87c.js';
+const wasm = await init('/stairway-to-heaven-26b439fc628ac87c_bg.wasm');
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
